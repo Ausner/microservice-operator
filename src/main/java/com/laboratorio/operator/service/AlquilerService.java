@@ -32,11 +32,11 @@ public class AlquilerService {
     public Alquiler createAlquiler(Alquiler alquiler) {
         String movieId = alquiler.getIdPelicula();
         // Verificar si la película existe usando ProductsFacade
-        MovieDto movie = productsFacade.getMovie(movieId);
+//        MovieDto movie = productsFacade.getMovie(movieId);
 
-        if (movie == null) {
-            throw new RuntimeException("La película no existe en el inventario");
-        }
+//        if (movie == null) {
+//            throw new RuntimeException("La película no existe en el inventario");
+//        }
 
         // Si la película existe, crear el alquiler
         return alquilerRepository.save(alquiler);
