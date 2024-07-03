@@ -30,7 +30,7 @@ public class AlquilerService {
     }
 
     public Alquiler createAlquiler(Alquiler alquiler) {
-        String movieId = String.valueOf(alquiler.getIdPelicula());
+        String movieId = alquiler.getIdPelicula();
         // Verificar si la película existe usando ProductsFacade
         MovieDto movie = productsFacade.getMovie(movieId);
 

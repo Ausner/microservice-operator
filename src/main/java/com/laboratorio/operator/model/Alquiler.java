@@ -13,7 +13,7 @@ public class Alquiler {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private int idPelicula;
+    private String idPelicula;
     private Date fechaDesde;
     private Date fechaHasta;
     private double precioFinal;
@@ -29,11 +29,11 @@ public class Alquiler {
         this.id = id;
     }
 
-    public int getIdPelicula() {
+    public String getIdPelicula() {
         return idPelicula;
     }
 
-    public void setIdPelicula(int idPelicula) {
+    public void setIdPelicula(String idPelicula) {
         this.idPelicula = idPelicula;
     }
 
